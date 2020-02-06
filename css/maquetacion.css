@@ -1,0 +1,40 @@
+* {
+  box-sizing: border-box;
+}
+.menu {
+  float:left;
+  width:20%;
+  text-align:center;
+  margin-top: 7%;
+}
+.menu li {
+  background-color:#4CBF26 ;
+  padding:8px;
+  margin-top:7px;
+  display:block;
+  width:100%;
+}
+.main {
+  float:left;
+  width:75%;
+  padding:0% 5%;
+  margin-left:65px;
+  height:970px;
+  margin-top: 4%;
+  
+}
+.main iframe{
+  border-radius: 5px;
+  height:930px;
+  background-color: rgba(102, 58, 76, 0.151);
+}
+
+@media only screen and (max-width:620px) {
+  /* For mobile phones: */
+  .menu, .main  {
+    width:100%;
+  }
+  .menu{
+    margin-top:13%;
+  }
+}

@@ -1,0 +1,34 @@
+.footer{
+    background-color: rgba( 5, 5, 5 ,0.7) ;
+  text-align:center;
+  padding:10px;
+  margin-top:7px;
+  color:white;
+  display:flex;
+  justify-content:space-around;
+}
+
+.foot .contactenos{
+  display:flex;
+  flex-direction: column;
+  justify-content: flex-start;
+ 
+}
+
+.foot .contactenos .contacto{
+ display: flex;
+ justify-content: space-between;
+}
+.foot .contactenos .contacto a{
+  text-decoration: none;
+  color:white;
+}
+
+.footer_header{
+  padding:5%;
+  margin-bottom: 6%;
+  font-weight: bolder;
+  border-bottom: 1px solid white;
+  
+}
+ 

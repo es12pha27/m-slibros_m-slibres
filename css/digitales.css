@@ -1,0 +1,62 @@
+.flex{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+header{
+    font-family:lobster;
+    font-size: 2.5rem;
+    text-align: center;
+    padding: 5%;
+    text-decoration: underline;
+    color:rgb(43, 10, 104);
+    font-variant: small-caps;
+}
+
+.flex >div{
+    width:100px;
+    text-align: center;
+    font-size: 15px;
+    padding: 30px;
+
+}
+
+.cadaLibro{
+border:1px solid black;
+border-radius: 6px;
+background-color:white;
+flex-direction: row;
+margin: 14px;
+padding: 50%;
+margin:2%;
+}
+
+.cadaLibro :hover{
+    transform: rotate(50deg); 
+    font-weight: bold;
+    font-size: 1.2rem;
+    
+}
+
+
+
+
+.cadaLibro img{
+    width:100%;
+    padding-bottom: 10px;
+    border-radius: 20px;
+}
+.cadaLibro a{
+    text-decoration: none;
+    font-weight: 100;
+    font-family:monospae;
+    font-family: Lobster;
+    color:rgb(14, 1, 1);
+   
+}
+/*@media only screen and (max-width:620px) {
+    .menu, .main, .right ,#logo,#titulo{
+      width:100%;
+    }
+  }*/

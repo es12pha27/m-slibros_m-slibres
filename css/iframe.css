@@ -1,0 +1,61 @@
+body{
+    background-color: rgba( 255, 255, 255 ,0.5);
+
+}
+*{
+font-family:lobster;
+
+}
+.presentacion{
+    display: flex;
+    justify-content: space-around;
+}
+.p1{
+    padding:3%;
+    margin:2%;
+    font-size: 16.5px;
+    border:2px solid black;
+    border-radius: 30%;
+    color:black;
+    background-color: rgba(252, 252, 252, 0.57);
+   box-shadow:0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+
+.p1 header{
+    font-family:lobster;
+    font-weight: 900;
+    color:rgb(61, 5, 27);
+    text-align: center;
+    font-size: 25px;
+    font-variant: small-caps;
+    margin:5%;
+    text-decoration:underline;
+}
+.p1 main{
+    padding:0% 5%;
+}
+
+.spot {
+    width: 99%;
+    height: 420px;
+    /* border: 1px solid black; */
+    border-radius: 20px 60px 40px 10px; 
+    animation-name: spot;
+    animation-duration: 12s;
+    animation-iteration-count: infinite;
+    background: center;
+    border:5px solid rgba(251, 248, 248,0.6);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+@keyframes spot {
+    0% {
+      background-image:url('../img/lectura1.jpg ');
+    }
+    50%{
+     background-image:url(' ../img/lectura3.jpg ');
+        }
+    100% {
+      background-image:url('../img/lectura.jpg  ');
+    }
+  }

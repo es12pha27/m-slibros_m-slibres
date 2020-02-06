@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>MásLibros,MásLibres</title>
+    	
+<link  rel="icon"   href="img/logo.png" type="image/png" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/blogs.css">
+    <link rel="stylesheet" href="css/maquetacion.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/home.js" language="javascript" type="text/javascript"></script>
+    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
+</head>
+<body >
+<header class="header">
+  <div class="logo">
+  <img  src="img/logo.png " class="logo_img" alt="logo"><h1>Más libros,más libres</h1>
+</div>
+<img src="img/casa.png" class="home" onclick="home()">
+</header>
+<section  style="overflow:auto">
+<nav class="menu">
+    <ul>
+      <li class="boton" > Horario<img class="mas"  id="mas" src="img/mas.png " alt="icono más" onclick='iconoMenuMasHorario()'><img class="menos" id="menos" src="img/menos.png" alt="icono menos" onclick='iconoMenuMenosHorario()'></li>
+      <ul class="anidado" id="horario">
+        <li  class="boton"  onclick='pagPaginas()'>Páginas</li>
+        <li  class="boton"  onclick='pagCapitulos()'>Capitulos</li>
+      </ul>
+      <li class="boton">Compra de libros<img class="mas" id="mas1"  src="img/mas.png" alt="icono más" onclick='iconoMenuMasCompra()'><img class="menos" id="menos1"src="img/menos.png " alt="icono menos" onclick='iconoMenuMenosCompra()'></li>
+      <ul class="anidado" id="compra">
+        <li class="boton"  onclick='pagDigital()' >Digitales</li>
+        <li class="boton"  onclick='pagFisico()'>Físicos</li>
+      </ul>
+    </ul>
+    <span  class="video_menu" ><video   autoPictureInPicture  controls>
+      <source src="videos/videoLeo.mp4" type="video/mp4">
+      <source src="movie.ogg" type="video/ogg">
+      Your browser does not support the video tag.
+    </video></span>
+</nav>
+
+<main class="main">
+    <iframe  id="iframe" class="show"   src="home2.html"  ></iframe> 
+</main>
+</section>
+
+
+<div class="blogs">
+<article class="blog" id="magia"onclick='blog1()'>
+  <header>La magia de la lectura</header>
+  <img src="img/magia.png">
+  <hr>
+  <p>Si hay algo que he confirmado con el pasar de los años, es la magia única que tiene la lectura para transportarnos a lugares y situaciones fabulosas tanto a chicos como a grandes. Recuerdo como con la primera obra que leí cuando era niña <q>Mi planta de naranja lima </q> ...</p>
+</article>
+<article class="blog" id="cambia"onclick='blog2()'>
+  <header>Leer nos cambia el cerebro</header>
+  <img src="img/cambia.jpg">
+  <hr>
+  <p>
+    Corre por ahí el bulo de que leer no es para tanto. Que ya existe la televisión, que vivimos en un mundo audiovisual, y que por tanto la lectura es una actividad como cualquier otra, casi un hobbie, algo marginal que irá retrocediendo con el tiempo y limitándose a los mensajes cortos de Twitter. Pero no es así ...
+  </p> 
+
+</article>
+<article class="blog" id="libres"onclick='blog3()'>
+  <header>Leer nos hace libres</header>
+  <img src="img/leer_nos_hace_libres.jpeg">
+  <hr>
+  <p>Leer nos hace libres, nos entrega nuevas oportunidades, nos permite conocer los locos mundos de Juan Emar, las historias de Mario Levrero, nos permite llegar a los mundos de Baudolino y correr aquel viaje que realiza hacia el oriente. Nos conmueve ...</p>
+</article>
+<article class="blog"   id="ignorancia" onclick='blog4()'>
+  <header>Leer perjudica gravemente la ignorancia</header>
+  <img src="img/ignorancia.jpg">
+  <hr>
+  <p>La lectura es fuente de conocimiento inconmensurable para todo aquel que se atreve a probarla. Nos llena de sabiduría y erradica la ignorancia. Es por ello que de vez en cuando es bueno agarrar un libro y dejarse llevar por las maravillosas historias que nos ofrecen. Existen varias ...</p>
+  </article>
+</div>
+<div id="container"><div class="guia_blog" id="globo"><img src="img/globos.png"></div></div>
+<footer class="footer"> 
+  <div class="foot">
+  <section class="contactenos" ><span    class="footer_header" >Contactenos:</span>
+    <span class="contacto"><img src="img/llamada-telefonica.png">  959889369</span><br>
+    <span class="contacto"><img src="img/gmail.png">&nbsp;  <a href="#"> maslibrosmaslibres@gmail.com</a></span><br>
+    <span class="contacto"><img src="img/facebook.png">&nbsp;  <a href="#"> facebook.com</a></span><br>
+ </section>
+  </div>
+  <div class="foot">
+    <section class="contactenos"><span class="footer_header">Blogs:</span>
+      <span class="contacto"><a href="#magia">✔ La magia de la lectura</a></span><br>
+      <span class="contacto"><a href="#cambia">✔ Leer nos cambia el cerebro</a></span><br>
+      <span class="contacto"><a href="#libres">✔Leer nos hace libres</a></span><br>
+      <span class="contacto"><a href="#ignorancia">✔Leer perjudica gravemente la ignorancia</a></span><br>
+   </section>
+  </div>
+  <div class="foot">
+    <section class="contactenos"><span class="footer_header">Conozcanos:</span>
+      <span class="contacto" onclick='home()'><a href="#">✔ ¿Quienes somos?</a></span><br>
+      <span class="contacto" onclick='home()'><a href="#">✔ Misión</a></span><br>
+      <span class="contacto" onclick='home()'><a href="#">✔ Visión</a></span><br>
+   </section>
+  </div>
+</footer>
+
+</body>
+</html>

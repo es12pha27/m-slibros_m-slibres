@@ -1,0 +1,60 @@
+.header{padding:35px;}
+.header .logo_img{
+    width:50px;
+    height: 50px;
+    background-color: white;
+    border-radius: 50%;
+    padding:5px;
+}
+.header h1{
+    display: inline;
+    font-family: fantasy;
+    color :white   ;
+    padding-left: 10px;
+    font-variant: small-caps;
+}
+ .header .logo{
+    float:left;
+    margin-top: -30px;
+    padding-top: -30px;
+}
+.home{
+  float: right;
+  position: relative;
+  bottom: 23px;
+  border:1px solid white;
+  border-radius:5%;
+  padding:0.4%;
+}
+body {
+    width: 100%;
+    display: block;
+    position: relative;
+    margin: 0 auto;
+    z-index: 0;
+  }
+  
+  body::after {
+    background: url(../img/biblioteca.jpg);
+    content: "";
+    opacity: 0.23;
+    position: absolute;
+    background-size: cover;
+    background-repeat: no-repeat;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: -1;   
+  } 
+.header{
+       background: #333;
+        color: white;
+        height: 50px;
+        z-index:1;
+        width: 100%; /* hacemos que la cabecera ocupe el ancho completo de la página */
+        left: 0; /* Posicionamos la cabecera al lado izquierdo */
+        top: 0; /* Posicionamos la cabecera pegada arriba */
+        position: fixed; /* Hacemos que la cabecera tenga una posición fija */
+    }
+}
